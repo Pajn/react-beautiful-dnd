@@ -56,6 +56,10 @@ export const canPartiallyScroll = ({
   current,
   change,
 }: CanPartiallyScrollArgs): boolean => {
+  if (window.rbdScrollBlocked) {
+    return false;
+  }
+
   // It is possible for the max scroll to be greater than the current scroll
   // when there are scrollbars on the cross axis. We adjust for this by
   // increasing the max scroll point if needed
