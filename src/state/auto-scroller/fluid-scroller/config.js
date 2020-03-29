@@ -3,8 +3,8 @@
 // Values used to control how the fluid auto scroll feels
 const config = {
   // percentage distance from edge of container:
-  startFromPercentage: 0.25,
-  maxScrollAtPercentage: 0.05,
+  startFromPercentage: 0.1,
+  maxScrollAtPercentage: 0.03,
   // pixels per frame
   maxPixelScroll: 28,
 
